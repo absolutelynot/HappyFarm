@@ -19,7 +19,5 @@ public abstract class Entity {
 
 
 
-
-
     private String _name = "Entity";
 }

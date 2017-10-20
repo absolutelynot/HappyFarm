@@ -1,38 +1,34 @@
 package Scene;
 
-import Entity.Entity;
+
 import Space.Space;
 
-import java.util.Vector;
 
-public abstract class Scene implements Runnable{
+
+public abstract class Scene {
     public Scene(){
 
     }
 
     public Scene(Space space) {
-        this._bindedSpace = space;
+        this._boundSpace = space;
     }
 
-    @Override
-    public void run() {
 
-    }
+    protected abstract void action();
 
     public void bindSpace(Space space){
-        _bindedSpace = space;
+        _boundSpace = space;
     }
 
-    public Space get_bindedSpace() {
-        return _bindedSpace;
+    public Space get_boundSpace() {
+        return _boundSpace;
     }
 
-    public Vector<Entity> get_actors() {
-        return _actors;
-    }
 
-    private Space _bindedSpace;
-    private Vector<Entity> _actors = new Vector<>();
+    private Space _boundSpace;
+    private String _name = "";
+
 
 }
 
