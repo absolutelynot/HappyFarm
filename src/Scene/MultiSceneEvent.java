@@ -5,23 +5,23 @@ import java.util.Vector;
 public class MultiSceneEvent implements Runnable {
 
     public MultiSceneEvent(Vector<Scene> _scenes) {
-        this._scenes = _scenes;
+        this.scenes = _scenes;
     }
 
     @Override
     public void run() {
-        for(Scene scene : _scenes){
+        for(Scene scene : scenes){
             scene.action();
         }
     }
 
     public void addScene(Scene scene){
-        _scenes.add(scene);
+        scenes.add(scene);
     }
 
     public void clearScenes(){
-        _scenes.clear();
+        scenes.clear();
     }
 
-    private Vector<Scene> _scenes = new Vector<>();
+    private Vector<Scene> scenes = new Vector<>();
 }

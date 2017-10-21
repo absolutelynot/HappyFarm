@@ -2,19 +2,19 @@ package Scene;
 
 public class SingleSceneEvent implements Runnable {
 
-    public SingleSceneEvent(Scene _scene) {
-        this._scene = _scene;
+    public SingleSceneEvent(Scene scene) {
+        this.scene = scene;
     }
 
     @Override
     public void run() {
-        _scene.action();
+        scene.action();
     }
 
 
-    public void set_scene(Scene _scene) {
-        this._scene = _scene;
+    public void setScene(Scene scene) {
+        this.scene = scene;
     }
 
-    private Scene _scene;
+    private Scene scene;
 }

@@ -13,13 +13,13 @@ public abstract class Plant extends Entity implements Reproducable, Growable {
     }
 
     public double getCost() {
-        return _cost;
+        return cost;
     }
 
     public void setCost(double _cost) {
-        this._cost = _cost;
+        this.cost = _cost;
     }
 
-    private double _cost = 0;
+    private double cost = 0;
 
 }

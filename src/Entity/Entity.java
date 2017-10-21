@@ -5,18 +5,18 @@ public abstract class Entity {
     protected Entity(){
 
     }
-    protected Entity(String _name) {
-        this._name = _name;
+    protected Entity(String name) {
+        this.name = name;
     }
 
     protected String getName() {
-        return _name;
+        return name;
     }
 
-    protected void setName(String _name) {
-        this._name = _name;
+    protected void setName(String name) {
+        this.name = name;
     }
 
 
-    private String _name = "Entity";
+    private String name = "Entity";
 }

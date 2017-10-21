@@ -36,7 +36,7 @@ class MyApp extends Application{
     }
 
     private void initiateResourcePool(){
-        ResourcePool.get_instance().addSpace("Field", new Field());
-        ResourcePool.get_instance().addSpace("Zoo", new Zoo());
+        ResourcePool.getInstance().addSpace("Field", new Field());
+        ResourcePool.getInstance().addSpace("Zoo", new Zoo());
     }
 }

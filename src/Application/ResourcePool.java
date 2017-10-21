@@ -3,17 +3,16 @@ package Application;
 import Space.Space;
 import java.util.HashMap;
 
-
 public class ResourcePool {
 
+    private static ResourcePool instance = new ResourcePool();
 
-    private static ResourcePool _instance = new ResourcePool();
     private ResourcePool(){
 
     }
 
-    public static ResourcePool get_instance(){
-        return _instance;
+    public static ResourcePool getInstance(){
+        return instance;
     }
 
 

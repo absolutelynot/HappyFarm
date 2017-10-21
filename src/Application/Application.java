@@ -1,10 +1,6 @@
 package Application;
 
-
-
-
 public abstract class Application {
-
 
     public Application() {
 

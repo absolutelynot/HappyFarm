@@ -12,33 +12,33 @@ public class Owner {
     @Override
     public String toString() {
         return "Owner{" +
-                "_name='" + _name + '\'' +
-                ", _currentMoneyFlow=" + _currentMoneyFlow +
+                "name='" + name + '\'' +
+                ", currentMoneyFlow=" + currentMoneyFlow +
                 '}';
     }
 
-    public String get_name() {
-        return _name;
+    public String getName() {
+        return name;
     }
 
-    public void set_name(String _name) {
-        this._name = _name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public double get_currentMoneyFlow() {
-        return _currentMoneyFlow;
+    public double getCurrentMoneyFlow() {
+        return currentMoneyFlow;
     }
 
-    public void set_currentMoneyFlow(double _currentMoneyFlow) {
-        this._currentMoneyFlow = _currentMoneyFlow;
+    public void setCurrentMoneyFlow(double currentMoneyFlow) {
+        this.currentMoneyFlow = currentMoneyFlow;
     }
 
 
     public static Owner getInstance(){
-        return _instance;
+        return instance;
     }
 
-    private String _name = "Owner";
-    private double _currentMoneyFlow = 0;
-    private static Owner _instance = new Owner();
+    private String name = "Owner";
+    private double currentMoneyFlow = 0;
+    private static Owner instance = new Owner();
 }

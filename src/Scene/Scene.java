@@ -11,23 +11,23 @@ public abstract class Scene {
     }
 
     public Scene(Space space) {
-        this._boundSpace = space;
+        this.boundSpace = space;
     }
 
 
     protected abstract void action();
 
     public void bindSpace(Space space){
-        _boundSpace = space;
+        boundSpace = space;
     }
 
-    public Space get_boundSpace() {
-        return _boundSpace;
+    public Space getBoundSpace() {
+        return boundSpace;
     }
 
 
-    private Space _boundSpace;
-    private String _name = "";
+    private Space boundSpace;
+    private String name = "";
 
 
 }
