@@ -1,5 +1,7 @@
 package Entity.Behavior;
 
 public interface Movable {
-    void move();
+    default String move(){
+        return "Moving";
+    }
 }

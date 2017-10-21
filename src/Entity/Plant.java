@@ -1,6 +1,9 @@
 package Entity;
 
-public abstract class Plant extends Entity {
+import Entity.Behavior.Growable;
+import Entity.Behavior.Reproducable;
+
+public abstract class Plant extends Entity implements Reproducable, Growable {
     public Plant() {
         super();
     }
@@ -9,11 +12,11 @@ public abstract class Plant extends Entity {
         super(_name);
     }
 
-    public double get_cost() {
+    public double getCost() {
         return _cost;
     }
 
-    public void set_cost(double _cost) {
+    public void setCost(double _cost) {
         this._cost = _cost;
     }
 

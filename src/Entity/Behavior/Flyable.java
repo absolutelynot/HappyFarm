@@ -1,6 +1,7 @@
 package Entity.Behavior;
 
 public interface Flyable{
-    void fly();
-
+    default String fly(){
+        return "Flying";
+    }
 }

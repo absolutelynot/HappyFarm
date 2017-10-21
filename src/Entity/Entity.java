@@ -2,21 +2,20 @@ package Entity;
 
 public abstract class Entity {
 
-    public Entity(){
+    protected Entity(){
 
     }
-    public Entity(String _name) {
+    protected Entity(String _name) {
         this._name = _name;
     }
 
-    public String get_name() {
+    protected String getName() {
         return _name;
     }
 
-    public void set_name(String _name) {
+    protected void setName(String _name) {
         this._name = _name;
     }
-
 
 
     private String _name = "Entity";
