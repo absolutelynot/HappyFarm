@@ -1,6 +1,6 @@
-package Entity.Behavior;
+package entity.animal.behavior;
 
-import Entity.Entity;
+import entity.Entity;
 import java.util.Vector;
 
 public interface Reproducable {

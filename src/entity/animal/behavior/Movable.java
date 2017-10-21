@@ -1,4 +1,4 @@
-package Entity.Behavior;
+package entity.animal.behavior;
 
 public interface Movable {
     default String move(){

@@ -1,6 +1,7 @@
-package Entity;
+package entity.animal.template;
 
-import Entity.Behavior.*;
+import entity.Entity;
+import entity.animal.behavior.*;
 
 public abstract class Animal extends Entity implements AnimalBehavior, Growable, Reproducable {
     protected Animal() {

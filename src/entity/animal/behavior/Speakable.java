@@ -1,4 +1,4 @@
-package Entity.Behavior;
+package entity.animal.behavior;
 
 public interface Speakable{
     default String speak(){

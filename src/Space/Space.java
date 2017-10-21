@@ -1,7 +1,7 @@
 package Space;
-import Entity.Animal;
-import Entity.Human;
-import Entity.Plant;
+import entity.animal.template.Animal;
+import entity.human.template.Human;
+import entity.plant.template.Plant;
 
 import java.util.HashMap;
 

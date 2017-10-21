@@ -1,4 +1,7 @@
-package Entity;
+package entity.human.template;
+
+import entity.Authority;
+import entity.Entity;
 
 public abstract class Human extends Entity {
     protected Human(){

@@ -1,6 +1,4 @@
-package Entity.Behavior;
-
-import Entity.Entity;
+package entity.animal.behavior;
 
 public interface Growable {
     default String grow(){

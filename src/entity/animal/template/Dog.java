@@ -1,8 +1,7 @@
-package Entity.AnimalTemplates;
+package entity.animal.template;
 
 
-import Entity.Animal;
-import Entity.Entity;
+import entity.Entity;
 
 public class Dog extends Animal{
 

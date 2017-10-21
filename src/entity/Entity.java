@@ -1,4 +1,4 @@
-package Entity;
+package entity;
 
 public abstract class Entity {
 
@@ -18,5 +18,5 @@ public abstract class Entity {
     }
 
 
-    private String name = "Entity";
+    private String name = "entity";
 }
