@@ -22,10 +22,13 @@ public abstract class Space {
 
     public Human addHuman(String name, Human human){return _humanList.put(name,human);}
     public Human deleteHuman(String name){return _humanList.remove(name);}
+    public void clearHumans(){_humanList.clear();}
     public Plant addPlant(String name, Plant plant){return _plantList.put(name,plant);}
     public Plant deletePlant(String name){return _plantList.remove(name);}
+    public void clearPlants(){_plantList.clear();}
     public Animal addAnimal(String name, Animal animal){return _animalList.put(name,animal);}
     public Animal deleteAnimal(String name){return _animalList.remove(name);}
+    public void clearAnimals(){_animalList.clear();}
 
 
     private Human                   _spaceLeader    = null;

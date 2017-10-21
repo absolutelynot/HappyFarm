@@ -2,39 +2,40 @@ package Entity;
 
 
 public abstract class Human extends Entity {
-    public Human(){
+    protected Human(){
         super();
     }
-    public Human(String _name){
+    protected Human(String _name){
         super(_name);
     }
-    public Human(String _name,  int level) {
+    protected Human(String _name,  int level, Authority authority) {
         super(_name);
         this._level = level;
+        this._authority = authority;
     }
 
 
-    public int get_level() {
+    public int getLevel() {
         return _level;
     }
 
-    public void set_level(int _level) {
+    protected void setLevel(int _level) {
         this._level = _level;
     }
 
-    public double get_salaryPerPeriod() {
+    public double getSalaryPerPeriod() {
         return _salaryPerPeriod;
     }
 
-    public void set_salaryPerPeriod(double _salaryPerPeriod) {
+    protected void setSalaryPerPeriod(double _salaryPerPeriod) {
         this._salaryPerPeriod = _salaryPerPeriod;
     }
 
-    public Authority get_authority() {
+    public Authority getAuthority() {
         return _authority;
     }
 
-    public void set_authority(Authority _authority) {
+    protected void setAuthority(Authority _authority) {
         this._authority = _authority;
     }
 
