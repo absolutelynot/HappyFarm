@@ -2,50 +2,36 @@ package Space;
 import Entity.Animal;
 import Entity.Human;
 import Entity.Plant;
-import java.util.Vector;
+
+import java.util.HashMap;
+
 
 public abstract class Space {
 
-    public Space(){
+    Space(){
 
     }
 
-    public Human get_spaceLeader() {
+    public Human getSpaceLeader() {
         return _spaceLeader;
     }
 
-    public void set_spaceLeader(Human _spaceLeader) {
+    public void setSpaceLeader(Human _spaceLeader) {
         this._spaceLeader = _spaceLeader;
     }
 
-    public Vector<Human> get_humanList() {
-        return _humanList;
-    }
+    public Human addHuman(String name, Human human){return _humanList.put(name,human);}
+    public Human deleteHuman(String name){return _humanList.remove(name);}
+    public Plant addPlant(String name, Plant plant){return _plantList.put(name,plant);}
+    public Plant deletePlant(String name){return _plantList.remove(name);}
+    public Animal addAnimal(String name, Animal animal){return _animalList.put(name,animal);}
+    public Animal deleteAnimal(String name){return _animalList.remove(name);}
 
-    public void set_humanList(Vector<Human> _humanList) {
-        this._humanList = _humanList;
-    }
 
-    public Vector<Plant> get_plantList() {
-        return _plantList;
-    }
-
-    public void set_plantList(Vector<Plant> _plantList) {
-        this._plantList = _plantList;
-    }
-
-    public Vector<Animal> get_animalList() {
-        return _animalList;
-    }
-
-    public void set_animalList(Vector<Animal> _animalList) {
-        this._animalList = _animalList;
-    }
-
-    private Human           _spaceLeader    = null;
-    private Vector<Human>   _humanList      = new Vector<>();
-    private Vector<Plant>   _plantList      = new Vector<>();
-    private Vector<Animal>  _animalList     = new Vector<>();
+    private Human                   _spaceLeader    = null;
+    private HashMap<String, Human>  _humanList      = new HashMap<>();
+    private HashMap<String, Plant>  _plantList      = new HashMap<>();
+    private HashMap<String, Animal> _animalList     = new HashMap<>();
 
 
 }

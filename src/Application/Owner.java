@@ -1,5 +1,8 @@
 package Application;
 
+/**
+ *
+ */
 public class Owner {
 
     private Owner(){
