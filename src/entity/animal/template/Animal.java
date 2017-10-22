@@ -3,41 +3,36 @@ package entity.animal.template;
 import entity.Entity;
 import entity.animal.behavior.*;
 
-public abstract class Animal extends Entity implements AnimalBehavior, Growable, Reproducable {
+public abstract class Animal extends Entity implements AnimalBehavior {
     protected Animal() {
         super();
     }
 
-    protected Animal(String _name) {
-        super(_name);
+    protected Animal(String name) {
+        super(name);
     }
 
     public double getCost() {
-        return _cost;
+        return cost;
     }
 
-    protected void setCost(double _cost) {
-        this._cost = _cost;
+    protected void setCost(double cost) {
+        this.cost = cost;
     }
 
 
     protected double getWeight() {
-        return _weight;
+        return weight;
     }
 
 
 
-    protected void setWeight(double _weight) {
-        this._weight = _weight;
+    protected void setWeight(double weight) {
+        this.weight = weight;
     }
 
-    @Override
-    public String grow(int weight) {
-        setWeight(getWeight() + weight);
-        return "Growing";
-    }
 
-    private double _cost = 0;
-    private double _weight = 0;
+    private double cost = 0;
+    private double weight = 0;
 
 }

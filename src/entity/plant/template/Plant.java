@@ -1,10 +1,8 @@
 package entity.plant.template;
 
 import entity.Entity;
-import entity.animal.behavior.Growable;
-import entity.animal.behavior.Reproducable;
 
-public abstract class Plant extends Entity implements Reproducable, Growable {
+public abstract class Plant extends Entity {
     public Plant() {
         super();
     }

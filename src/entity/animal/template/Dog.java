@@ -14,16 +14,11 @@ public class Dog extends Animal{
         return null;
     }
 
-
     @Override
     public String move() {
         return "Running Fast";
     }
 
-    @Override
-    public Entity reproduce() {
-        return new Dog();
-    }
 
     @Override
     public String speak() {
