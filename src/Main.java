@@ -1,12 +1,14 @@
 import application.*;
-import Space.*;
+import entity.human.template.Staff;
+import space.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        Application myApp= new MyApp();
-        myApp.initiate();
-        myApp.start();
+//        Application myApp= new MyApp();
+//        myApp.initiate();
+//        myApp.start();
+        Staff
     }
 }
 

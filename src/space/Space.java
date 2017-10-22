@@ -1,4 +1,4 @@
-package Space;
+package space;
 import entity.animal.template.Animal;
 import entity.human.template.Human;
 import entity.plant.template.Plant;

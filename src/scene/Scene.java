@@ -1,7 +1,7 @@
-package Scene;
+package scene;
 
 
-import Space.Space;
+import space.Space;
 
 
 

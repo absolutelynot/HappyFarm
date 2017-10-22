@@ -1,4 +1,4 @@
-package Scene;
+package scene;
 
 public class SingleSceneEvent implements Runnable {
 

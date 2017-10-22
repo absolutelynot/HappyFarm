@@ -1,6 +1,6 @@
 package application;
 
-import Space.Space;
+import space.Space;
 import java.util.HashMap;
 
 public class ResourcePool {

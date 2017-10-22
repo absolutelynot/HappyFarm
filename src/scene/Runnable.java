@@ -1,4 +1,4 @@
-package Scene;
+package scene;
 
 
 public interface Runnable {

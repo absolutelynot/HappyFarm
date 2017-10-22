@@ -1,22 +1,33 @@
 package entity.human.template;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
-
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class Leader extends Staff {
 
-    private HashMap<Integer, Staff> unders;
+    private HashMap<Integer, Staff> under;
 
     public Leader(String name) {
         super(name);
-        this.unders = new HashMap<Integer, Staff>();
+        this.under = new HashMap<Integer, Staff>();
+    }
+
+    public int getUnderNum() {
+        return under.size();
+    }
+
+    protected HashMap<Integer, Staff> getUnder() {
+        return this.under;
+    }
+
+    public Iterator iterator() {
+        return new StaffIterator(this);
     }
 
     @Override
     public void addStaff(Staff staff) {
-        if (this.unders.get(staff.getStaffID()) == null) {
-            this.unders.put(staff.getStaffID(), staff);
+        if (this.under.get(staff.getStaffID()) == null) {
+            this.under.put(staff.getStaffID(), staff);
         }
         else {
             System.out.println("This staff has already existed.");
@@ -25,11 +36,12 @@ public class Leader extends Staff {
 
     @Override
     public void removeStaff(Staff staff) {
-        this.unders.remove(staff.getStaffID());
+        this.under.remove(staff.getStaffID());
     }
 
     @Override
     public Staff getStaffByID(int id) {
-        return this.unders.get(id);
+        return this.under.get(id);
     }
+
 }
